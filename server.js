@@ -7,7 +7,7 @@ const connectDB = require('./config/db')
 const { mainModule } = require('process')
 
 //load config
-dotenv.config({ path: './config/config.env'})
+dotenv.config({ path: './config/.env'})
 
 connectDB()
 
