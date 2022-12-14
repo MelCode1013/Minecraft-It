@@ -1,23 +1,24 @@
-const express = require('express')
+const express = require('express');
 const app = express()
-const mongodb = require('mongodb')
-const MongoClient = require('mongodb').MongoClient
-const dotenv = require('dotenv')
-const PORT = 1337
+const connectDB = require('./config/database');
 
-require('dotenv').config()
+//env
+require('dotenv').config({path: './config/.env'})
 
+//Database
+connectDB()
 
-const uri = DB_STRING;
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-    console.log('DB connected')
-    const collection = client.db("test").collection("devices");
-    // perform actions on the collection object
-    client.close();
+app.set('view engine', 'ejs');
+app.use(express.static('public'))
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+
+//routes
+app.get('/', function (req, res) {
+    res.render('index', {});
 });
 
 
-app.listen('/', PORT => {
-    console.log(`Your server on port ${PORT} is running, better go catch it!`)
+app.listen(process.env.PORT, () => {
+    console.log('Your server is running, better go catch it!')
 })
