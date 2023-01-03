@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/head.ejs') %>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= pageTitle %></title>
-    <link rel="stylesheet" href="/public/css/style.css">
-</head>
-
-<body>
-    <header class="main-header">
-        <nav class="main-header_nav">
-            <ul class="main-header_item-list">
-                <li class="main-header_item"></li>
-            </ul>
-        </nav>
-    </header>
-<h1>Page not found</h1>
-    <script src="main.js"></script>
-</body>
-
-</html>
+    <body>
+        <header class="main-header">
+            <nav class="main-header_nav">
+                <ul class="main-header_item-list">
+                    <li class="main-header_item"></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Page not found</h1>
+        <script src="main.js"></script>
+        <%- include('partials/footer.ejs') %>
