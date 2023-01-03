@@ -4,7 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "build": "tailwindcss -i ./public/css/style.css -o ./public/css/main.css",
+    "watch": "tailwindcss -i ./public/css/style.css -o ./public/css/main.css --watch"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,8 @@
     "mongodb": "^4.12.1",
     "mongoose": "^6.8.0",
     "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
   }
 }
