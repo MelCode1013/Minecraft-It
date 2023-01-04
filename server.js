@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express()
+const loginRoute = require('./routes/loginRoute.js')
 const connectDB = require('./config/database');
 
 //env
@@ -26,11 +27,13 @@ app.get('/upload', function (req, res) {
     });
 });
 
-app.get('/login', (req,res) => {
+/*app.get("/login", (req,res) => {
     res.render('login', {
         pageTitle: "Log in"
     })
-})
+})*/
+
+app.use('/login', loginRoute)
 
 app.use((req, res, next) => {
     res.status(404).render('404', { pageTitle: 'Page Not Found' })
