@@ -1,8 +1,8 @@
-const { Router } = require('express')
 const express = require('express')
 const router = express.Router()
+//const feedController = require("../controllers/feed")
 
-Router.get("/feed", (req,res) => {
+router.get("/feed", (req,res) => {
     console.log('feed router is workin!')
     res.render('feed', {
         pageTitle: "Dashboard"
