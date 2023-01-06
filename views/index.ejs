@@ -3,19 +3,27 @@
 
     <body class="bg-lime-200">
         <%- include('partials/header.ejs') %>
-
-            <h1 class="text-2xl ">Welcome to</h1>
-            <img src="img/minecraftitlogo2.png" alt="minecraft it logo">
-            <img src="img/minecraftit_TXT_ONLY.png" alt="minecraft it logo text">
-            <p>A place to share builds and build a community</p>
-            <div>
+            <div class="flex flex-col justify-center content-center">
+                <h1 class="text-2xl ">Welcome to</h1>
+                <img src="img/minecraftitlogo2.png" alt="minecraft it logo">
+                <img src="img/minecraftit_TXT_ONLY.png" alt="minecraft it logo text">
+                <p>A place to share builds and build a community</p>
+            </div>
+            <div class="w-full max-w-xs flex items-center content-center
+         flex-col">
                 <h2>Already a user? Log in below!</h2>
-                <form action="/feed" method="POST">
+                <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col justify-self-center	
+            	" action="/feed" method="POST">
                     <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" placeholder="username" required>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
+                        id="username" type="text" placeholder="Username">
                     <label for="password">Password:</label>
-                    <input type="text" id="password" name="password" placeholder="password" required>
-                    <button class="log-in bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Log
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
+                        type="text" id="password" name="password" placeholder="password" required>
+                    <button
+                        class="log-in bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex-auto">Log
                         In!</button>
                 </form>
                 <button class="sign-up bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">New?
