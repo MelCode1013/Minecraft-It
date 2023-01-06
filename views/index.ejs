@@ -2,9 +2,25 @@
     </head>
 
     <body class="bg-lime-200">
-        <h1 class="text-2xl ">Welcome to Minecraft It!</h1>
-        <p>A place to share builds and build a community</p>
-        <button class="">Already a user? Log in</button>
-        <button>New? Sign up</button>
+        <%- include('partials/header.ejs') %>
 
-        <%- include('partials/footer.ejs') %>
+            <h1 class="text-2xl ">Welcome to</h1>
+            <img src="img/minecraftitlogo2.png" alt="minecraft it logo">
+            <img src="img/minecraftit_TXT_ONLY.png" alt="minecraft it logo text">
+            <p>A place to share builds and build a community</p>
+            <div>
+                <h2>Already a user? Log in below!</h2>
+                <form action="/feed" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="username" required>
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="password" placeholder="password" required>
+                    <button class="log-in bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Log
+                        In!</button>
+                </form>
+                <button class="sign-up bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">New?
+                    Sign
+                    up</button>
+            </div>
+
+            <%- include('partials/footer.ejs') %>
