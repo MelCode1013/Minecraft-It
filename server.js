@@ -28,9 +28,15 @@ app.get('/upload', function (req, res) {
     });
 });
 
+app.get('/feed', (req,res,next) => {
+    console.log('feed router is workin!')
+    res.render('feed', {
+        pageTitle: "Dashboard"
+    })
+})
 
 
-app.use(loginRoute)
+//app.use(loginRoute)
 app.use(feedRoute)
 
 app.use((req, res, next) => {
