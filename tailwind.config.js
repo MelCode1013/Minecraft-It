@@ -15,17 +15,17 @@ module.exports = {
       
       // that is animation class
       animation: {
-        fade: 'fadeOut 2s ease-in',
+        fade: 'fadeOut 1s ease-in',
       },
 
       // that is actual animation
-      keyframes: theme => ({
+      keyframes: {
         fadeOut: {
-          '0%': { transition: 'opacity(0)' },
-          '50%': { transition: 'opacity(40)'},
-          '100%': { transition: 'opacity(100)'},
+          '0%': { opacity: 0 },
+          '50%': { opacity: .5},
+          '100%': { opacity: 1},
         },
-      }),
+      },
     },
     screens: {
       sm: '640px',

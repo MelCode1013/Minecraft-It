@@ -539,20 +539,20 @@ video {
 
 @keyframes fadeOut {
   0% {
-    transition: opacity(0);
+    opacity: 0;
   }
 
   50% {
-    transition: opacity(40);
+    opacity: 0.5;
   }
 
   100% {
-    transition: opacity(100);
+    opacity: 1;
   }
 }
 
 .animate-fade {
-  animation: fadeOut 2s ease-in;
+  animation: fadeOut 1s ease-in;
 }
 
 .appearance-none {
@@ -635,6 +635,10 @@ video {
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-3xl {
