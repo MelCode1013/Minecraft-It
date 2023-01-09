@@ -517,10 +517,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -579,61 +575,6 @@ video {
 
 .justify-self-center {
   justify-self: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
-.justify-items-start {
-  justify-items: start;
-}
-
-.justify-items-end {
-  justify-items: end;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
-.justify-end {
-justify-content: flex-end;
-}
-
-.justify-start { justify-content: flex-start; }
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.flex-nowrap {
-  flex-wrap: nowrap;
-}
-
-.w-50 {
-  width: 50%;
-
-}
-
-.w-75 {
-  width: 75%;
-}
-
-.w-100 {
-  width: 100%;
 }
 
 .rounded {
@@ -749,6 +690,50 @@ justify-content: flex-end;
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.h-px {
+  height: 1px;
+}
+
+/*mobile first*/
+
+.profile-pic {
+  height: 3rem;
+  margin: .5rem;
+}
+
+.hamburger-menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin: .5rem;
+}
+
+.span-1, .span-2, .span-3{
+  background-color: black;
+  height: .15rem;
+  width: 25px;
+  margin: .25rem;
 }
 
 .hover\:-translate-y-1:hover {

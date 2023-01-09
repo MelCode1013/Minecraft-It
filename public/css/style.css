@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.rounded-sm {
+    border-radius: 0.125rem; }
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.h-px {
+    height: 1px;
+}
+/*mobile first*/
+
+.profile-pic {
+    height: 3rem;
+    margin: .5rem;
+}
+
+.hamburger-menu-icon {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem;
+}
+
+.span-1, .span-2, .span-3{
+background-color: black;
+    height: .15rem;
+    width: 25px;
+    margin: .25rem;
+}

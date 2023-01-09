@@ -4,6 +4,29 @@ module.exports = {
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+
+    extend: {
+
+      height: {
+        '0': '0px',
+        'px': '1px',
+        '8': '2rem'
+      },
+      
+      // that is animation class
+      animation: {
+        fade: 'fadeOut 2s ease-in',
+      },
+
+      // that is actual animation
+      keyframes: theme => ({
+        fadeOut: {
+          '0%': { transition: 'opacity(0)' },
+          '50%': { transition: 'opacity(40)'},
+          '100%': { transition: 'opacity(100)'},
+        },
+      }),
+    },
     screens: {
       sm: '640px',
       md: '768px',
