@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
     "build": "tailwindcss -i ./public/css/style.css -o ./public/css/main.css",
     "watch": "tailwindcss -i ./public/css/style.css -o ./public/css/main.css --watch"
   },
