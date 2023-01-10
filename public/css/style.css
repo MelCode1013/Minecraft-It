@@ -10,12 +10,22 @@
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
 .rounded-sm {
     border-radius: 0.125rem; }
 
 .rounded-full {
     border-radius: 9999px;
 }
+
+
 
 .h-px {
     height: 1px;
@@ -42,4 +52,9 @@ background-color: black;
     height: .15rem;
     width: 25px;
     margin: .25rem;
+}
+
+.upload-build-btn {
+    max-width: 40%;
+
 }
