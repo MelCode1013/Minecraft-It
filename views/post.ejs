@@ -1,25 +1,20 @@
 <%- include('partials/head')%>
-    </head>
+    <%- include('partials/head') %>
+        </head>
 
-    <body>
-        <header class="main-header">
-            <nav class="main-header_nav">
-                <ul class="main-header_item-list">
-                    <li class="main-header_item"></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div>
-                <form action="/" method="POST">
-                    <label for="picture">Upload your build</label>
-                    <input type="file" id="picture" name="picture" accept="image/png, img/jpeg">
-                </form>
-            </div>
+        <body class="bg-lime-200">
+            <%- include('partials/header.ejs') %>
+                <h1 class="text-center font-bold animate-fade">Upload your build!</h1>
+                <div>
+                    <form action="/" method="POST">
+                        <label for="picture"></label>
+                        <input type="file" id="picture" name="picture" accept="image/png, img/jpeg">
+                    </form>
+                </div>
 
-            <button class="btn" type="submit">Post</button>
-        </main>
-    </body>
+                <button class="btn" type="submit">Post</button>
+                </main>
+        </body>
 
 
-    </html>
+        </html>
