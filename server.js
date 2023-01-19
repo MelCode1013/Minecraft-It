@@ -3,9 +3,10 @@ const app = express()
 const loginRoute = require('./routes/loginRoute.js')
 const feedRoute = require('./routes/routes.js')
 const postRoute = require('./routes/routes.js')
-const multer = require('multer')
-const sharp = require('sharp')
+
 const connectDB = require('./config/database');
+
+
 
 //env
 require('dotenv').config({ path: './config/.env' })
