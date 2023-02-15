@@ -4,6 +4,7 @@ require("dotenv").config({ path: "./config/.env" });
 
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
+  secure: true,
   api_key: process.env.API_KEY,
   api_secret: process.env.API_SECRET,
 });
