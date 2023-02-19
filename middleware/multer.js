@@ -5,4 +5,5 @@ const storage = multer.memoryStorage()
 //multer({ storage }).single('image'); sets the storage option we’ll be using on the application while the .single('image'); specifies the field name multer should go to when it’s looking for the file.
 const multerUploads = multer({ storage }).single('image')
 
-export { multerUploads };
+
+module.exports =  multerUploads
